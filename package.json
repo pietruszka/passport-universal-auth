@@ -1,0 +1,33 @@
+{
+  "name": "passport-universal-auth",
+  "version": "0.0.1",
+  "description": "Passport universal auth",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pietruszka/passport-universal-auth.git"
+  },
+  "keywords": [
+    "Passport",
+    "auth"
+  ],
+  "author": "Piotr Pietruszka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pietruszka/passport-universal-auth/issues"
+  },
+  "homepage": "https://github.com/pietruszka/passport-universal-auth#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-github": "^1.1.0",
+    "passport-google-oauth": "^1.0.0",
+    "passport-linkedin": "^1.0.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4"
+  }
+}
