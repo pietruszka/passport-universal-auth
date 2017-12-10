@@ -4,8 +4,8 @@
 ```javascript 1.8
 let authSettings = {
     twitter: {
-        clientID: "jFhauZyehl1e0N3qhhuJ5XasN",
-        clientSecret: "kzcUo0L7lWMqR71r8wwZFgD1LJExkGMtfRhO3WXmpRXphVcGZR",
+        clientID: "jFh",
+        clientSecret: "kz",
         callbackURL: "http://localhost:30001/auth/twitter/callback",
         authMeth: function(accessToken, refreshToken, profile, done) {
             return done(null, profile);
@@ -18,8 +18,8 @@ let authSettings = {
         }
     },
     linkedin: {
-        clientID: "86wkiaes1uktus",
-        clientSecret: "fEQFKpvni8LtzgHk",
+        clientID: "86",
+        clientSecret: "fE",
         callbackURL: "http://localhost:30001/auth/linkedin/callback",
         authMeth: function(accessToken, refreshToken, profile, done) {
             return done(null, profile);
