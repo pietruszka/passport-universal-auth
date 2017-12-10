@@ -17,7 +17,7 @@ class Auth{
             return done(null, profile);
         }))
 
-        this.router.get(data.route, passport.authenticate(this.passportName));
+        this.router.get(data.route, passport.authenticate(this.passportName, data.scope));
         this.router.get(data.callback,
             passport.authenticate(this.passportName, { failureRedirect: data.failureRedirect || '/' }),
             data.successRoute || function(req, res) {
@@ -44,7 +44,7 @@ class Twitter extends Auth{
             return done(null, profile);
         }));
 
-        this.router.get(data.route, passport.authenticate(this.passportName));
+        this.router.get(data.route, passport.authenticate(this.passportName, data.scope));
         this.router.get(data.callback,
             passport.authenticate(this.passportName, { failureRedirect: data.failureRedirect || '/' }),
             data.successRoute || function(req, res) {
@@ -96,7 +96,7 @@ class Linkedin extends Auth{
             return done(null, profile);
         }));
 
-        this.router.get(data.route, passport.authenticate(this.passportName));
+        this.router.get(data.route, passport.authenticate(this.passportName, data.scope));
         this.router.get(data.callback,
             passport.authenticate(this.passportName, { failureRedirect: data.failureRedirect || '/' }),
             data.successRoute || function(req, res) {
